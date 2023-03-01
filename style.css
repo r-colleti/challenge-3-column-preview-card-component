@@ -1,0 +1,147 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px 24px;
+	background-color: hsl(0, 0%, 95%);
+	min-height: 100vh;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 920px;
+	width: 100%;
+}
+
+.car_Sec {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+	box-sizing: border-box;
+	padding: 48px;
+	min-width: 264px;
+	height: 500px;
+}
+
+.car_Sec img {
+	width: 65px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.car_Sec h1 {
+	margin: 0 0 40px 0;
+	text-transform: uppercase;
+	font-family: 'Big Shoulders Display', cursive;
+	color: hsl(0, 0%, 95%);
+	font-size: 40px;
+}
+
+.car_Sec p {
+	margin: 0px;
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.car_Sec button {
+	width: 146px;
+	height: 48px;
+	border-radius: 25px;
+	border: none;
+	background-color: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+.car_Sec button:hover {
+	background-color: transparent;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+#sedans {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 10px 0 0 10px;
+}
+
+#sedans button {
+	color: hsl(31, 77%, 52%);
+}
+
+#sedans button:hover {
+	color: white;
+}
+
+#suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+
+#suvs button {
+	color: hsl(184, 100%, 22%);
+}
+
+#suvs button:hover {
+	color: white;
+}
+
+#luxury {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 10px 10px 0;
+}
+
+#luxury button {
+	color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+	color: white;
+}
+
+@media (max-width: 839px) {
+	body {
+		padding: 90px 24px;
+	}
+
+	.car_Sec {
+		height: auto;
+	}
+
+	#sedans {
+		border-radius: 10px 0 0 0;
+	}
+
+	#suvs {
+		border-radius: 0 10px 0 0;
+	}
+
+	#luxury {
+		border-radius: 0 0 10px 10px;
+	}
+}
+
+@media (max-width: 575px) {
+
+	#sedans {
+		border-radius: 10px 10px 0 0;
+	}
+
+	#suvs {
+		border-radius: 0 0 0 0;
+	}
+
+	#luxury {
+		border-radius: 0 0 10px 10px;
+	}
+}
+
